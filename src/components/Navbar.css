@@ -1,0 +1,147 @@
+.navbar-brand img {
+    /* border: red 1px solid; */
+    padding: 0;
+    width: 200px;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+
+}
+
+.navbar-nav .navbar-link {
+    text-decoration: none;
+    color: #bfbfbf;
+    transition: all 300ms ease-in;
+}
+
+.navbar-nav .navbar-link:hover {
+    color: #fc0c8c;
+}
+
+.service-links-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-links-container li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+
+}
+
+.service-links-container li:last-child {
+    margin-bottom: 0;
+}
+
+.service-link {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.service-link:hover {
+    text-decoration: none;
+    color: #fc0c8c;
+}
+
+.transparent {
+    position: sticky;
+    background-color: transparent !important;
+}
+
+.sticky {
+
+    transition: background-color 0.3s ease-in-out;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s ease-in-out;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width:400px) {
+
+    .dropdown-menu {
+        width: 480px !important;
+
+    }
+
+    .dropdown-item {
+        font-size: 15px;
+    }
+
+    .adjust {
+        display: none;
+    }
+
+    .adjust1 {
+        margin-left: 40px !important;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .hamburger {
+        display: block;
+        background: none;
+        width: 50px;
+        height: 3px;
+        transition: all 0.25s;
+        position: relative;
+        box-shadow: none;
+        border: none;
+    }
+
+
+    .hamburger-top,
+    .hamburger-middle,
+    .hamburger-bottom {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background: white;
+        transform: rotate(0);
+        transition: all 0.5s;
+    }
+
+    .hamburger-middle {
+        transform: translateY(7px);
+    }
+
+    .hamburger-bottom {
+        transform: translateY(14px);
+        background: white;
+    }
+
+    .open .hamburger-top {
+        transform: rotate(45deg);
+        background-color: #fff;
+    }
+
+    .open .hamburger-middle {
+        display: none;
+    }
+
+    .open .hamburger-bottom {
+        transform: rotate(-45deg);
+        background-color: #fff;
+    }
+
+
+    .navbar-brand img {
+        width: 200px;
+    }
+}

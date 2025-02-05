@@ -1,0 +1,128 @@
+footer {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    position: sticky;
+    background-color: black;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(255, 255, 255, 0.6);
+    transition: all 300ms ease-in-out;
+    text-decoration: none;
+
+}
+
+footer img {
+    width: 200px;
+
+    /* border: red 1px solid; */
+    /* margin-top: -25px */
+}
+
+footer .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .contact-container .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+}
+
+footer .contact-container .contact #contact {
+    display: flex;
+    align-items: center;
+}
+
+footer .contact-container .contact .social-media {
+    display: flex;
+    gap: 10px;
+}
+
+footer .contact-container .contact .social-media .icon {
+    padding: 0;
+    font-size: 2rem;
+    transition: none;
+}
+
+footer .contact-container .contact .social-media .icon:hover {
+    color: #fc0c8c;
+}
+
+footer .office-address-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer .office-address-container .address {
+    max-width: 20rem;
+}
+
+footer .office-address-container h4 {
+    color: #fc0c8c;
+    font-size: 1.1rem;
+
+}
+
+footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+
+    footer {
+        /* display: flex; */
+        flex-direction: column;
+        padding: 0 1rem 4rem 1rem;
+    }
+
+    footer .contact-container {
+        /* display: flex; */
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    footer .contact-container p:first-child {
+        margin: 0;
+    }
+
+    footer img {
+        width: 250px;
+    }
+
+    footer .office-address-container {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    footer .office-address-container .address {
+        text-align: center;
+    }
+
+    footer .footer-links {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    footer .contact-container .contact .social-media {
+        justify-content: center;
+    }
+}
