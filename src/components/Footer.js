@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
 
         <Link to="/" onClick={footerLogoClickHandler}>
-          <img src={logo} />
+          <img src={logo} alt="logo" />
         </Link>
       </div>
 
